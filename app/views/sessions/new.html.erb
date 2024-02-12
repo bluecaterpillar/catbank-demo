@@ -1,0 +1,19 @@
+<div style="margin-top: 100px; display: flex; justify-content: center; align-items: center;">
+    <%= form_tag sessions_path do %>
+        <h1>Log In to your Account</h1>
+        <br />
+        <div class="field">
+            <%= label_tag :email %><br />
+            <%= text_field_tag :email, params[:email] %>
+        </div>
+        <br />
+        <div class="field">
+            <%= label_tag :password %><br />
+            <%= password_field_tag :password %>
+        </div>
+        <br />
+        <div class="actions"><%= submit_tag "Log In" %></div>
+        <br />
+    <% end %>
+</div>
+
